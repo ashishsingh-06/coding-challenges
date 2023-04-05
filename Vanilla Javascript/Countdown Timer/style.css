@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+.countdown-container {
+    height: 100%;
+    padding: 0px 20px;
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-label,
+.countdown-inputs,
+.countdown-buttons{
+    display: flex;
+    /* width: 100%; */
+    gap: 50px;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+}
+
+.countdown-buttons {
+    justify-content: center;
+}
+
+.countdown-colon {
+    font-size: 25px;
+}
+
+.labels {
+    width: 90px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.time-input {
+    outline: 0;
+    /* border: 0 */
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 25px;
+    width: 90px;
+    background-color: white;
+    border: 1px solid #eee;
+}
+
+.btn {
+    border: 0;
+    font-size: 25px;
+    padding: 15px 65px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.start {
+    background-color: green;
+}
+
+.stop {
+    background-color: red;
+    display: none;
+}
+
+.reset {
+    background-color: orange;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
