@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.item {
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 1px solid #eee;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
